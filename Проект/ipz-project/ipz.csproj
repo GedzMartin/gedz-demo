@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{688F8837-5689-4887-912D-38CB028DEA5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ipz</RootNamespace>
+    <AssemblyName>ipz</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.26\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassDB.cs" />
+    <Compile Include="FormEndOfFilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEndOfFilling.Designer.cs">
+      <DependentUpon>FormEndOfFilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFilling.Designer.cs">
+      <DependentUpon>FormFilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFillingProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFillingProcess.Designer.cs">
+      <DependentUpon>FormFillingProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShowingBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShowingBalance.Designer.cs">
+      <DependentUpon>FormShowingBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShowingCapacity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShowingCapacity.Designer.cs">
+      <DependentUpon>FormShowingCapacity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithdrawing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithdrawing.Designer.cs">
+      <DependentUpon>FormWithdrawing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClientChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientChoice.Designer.cs">
+      <DependentUpon>FormClientChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployer.Designer.cs">
+      <DependentUpon>FormEmployer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployeeChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeChoice.Designer.cs">
+      <DependentUpon>FormEmployeeChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIssuingmoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIssuingmoney.Designer.cs">
+      <DependentUpon>FormIssuingmoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClient.Designer.cs">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStart.Designer.cs">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormEndOfFilling.resx">
+      <DependentUpon>FormEndOfFilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFilling.resx">
+      <DependentUpon>FormFilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFillingProcess.resx">
+      <DependentUpon>FormFillingProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShowingBalance.resx">
+      <DependentUpon>FormShowingBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShowingCapacity.resx">
+      <DependentUpon>FormShowingCapacity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithdrawing.resx">
+      <DependentUpon>FormWithdrawing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClientChoice.resx">
+      <DependentUpon>FormClientChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployer.resx">
+      <DependentUpon>FormEmployer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeeChoice.resx">
+      <DependentUpon>FormEmployeeChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIssuingmoney.resx">
+      <DependentUpon>FormIssuingmoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClient.resx">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormStart.resx">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
